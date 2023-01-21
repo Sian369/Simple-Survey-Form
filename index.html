@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pet Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Pet Survey Form</h1>
+    <p id="description">
+      Tell us about you and your pets to help us improve our platform
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"
+          >Name:
+          <input id="name" type="text" placeholder="Enter your name" required
+        /></label>
+        <label for="email" id="email-label"
+          >Email:
+          <input
+            id="email"
+            type="email"
+            placeholder="pets@example.co.uk"
+            required
+        /></label>
+        <label for="age">Age: <input id="age" type="number" /></label>
+      </fieldset>
+      <fieldset>
+        <label for="number" id="number-label"
+          >How many pets do you currently have?
+          <input id="number" type="number" min="0" max="100" placeholder="1"
+        /></label>
+        <label for="dropdown"
+          >What is your favourite type of pet?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Dog</option>
+            <option value="2">Cat</option>
+            <option value="3">Rodent</option>
+            <option value="4">Horse</option>
+            <option value="5">Reptile</option>
+            <option value="6">Fish</option>
+            <option value="7">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>What type of pet/s do you own? (tick all that apply)</p>
+        <label>Dog <input type="checkbox" value="1" /></label>
+        <label>Cat <input type="checkbox" value="2" /></label>
+        <label>Rodent <input type="checkbox" value="3" /></label>
+        <label>Horse <input type="checkbox" value="4" /></label>
+        <label>Reptile <input type="checkbox" value="5" /></label>
+        <label>Fish <input type="checkbox" value="6" /></label>
+        <label>Other <input type="checkbox" value="7" /></label>
+      </fieldset>
+      <fieldset>
+        <p>Would you like to recieve email updates with our latest news?</p>
+        <label>Yes <input value="1" name="updates" type="radio" /></label>
+        <label>No <input value="2" name="updates" type="radio" /></label>
+        <label for="bio"
+          >Tell us more about your pets:
+          <textarea
+            id="bio"
+            name="bio"
+            rows="3"
+            cols="30"
+            placeholder="I have a dog named Teddy and he..."
+          ></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="submit" id="submit" />
+    </form>
+  </body>
+</html>
