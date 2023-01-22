@@ -1,4 +1,8 @@
 body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(pets.jpg) no-repeat center fixed;
+  background-size: cover;
+  color: #e6f5ea;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1,
@@ -7,11 +11,63 @@ p {
   text-align: center;
 }
 
-label,
+label {
+  display: block;
+  margin: 0.4rem 0.5rem;
+}
+
 select {
   display: block;
 }
 
-input {
+input, textarea, select, text {
+  margin: 10px 0 0 0;
   width: 100%;
+  min-height: 2em;
+  background-color: #FCFCFC;
 }
+
+
+fieldset {
+  margin-bottom: 5px;
+  border: none;
+  border-bottom: 5px solid #083620;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(0,77,71,.9); 
+  color: #e6f5ea;
+  border-radius: 0.5rem;
+  padding-bottom: 1px;
+}
+
+.inline {
+  width: 10%;
+  margin: 5 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 50%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.2rem;
+  background-color: #e6f5ea;
+  border-color: #083620;
+  min-width: 300px;
+  border-radius: 0.6rem;
+  color: #004D47;
+  box-shadow: 10px 5px 5px #083620;
+}
+
+
+
+
+
