@@ -6,9 +6,13 @@ body {
 }
 
 h1,
-p {
+h2 {
   margin: 1em auto;
   text-align: center;
+}
+
+h2 {
+  font-size: 16px;
 }
 
 label {
@@ -25,6 +29,11 @@ input, textarea, select, text {
   width: 100%;
   min-height: 2em;
   background-color: #FCFCFC;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  padding: 8px 8px;
 }
 
 
@@ -47,11 +56,24 @@ form {
   padding-bottom: 1px;
 }
 
+.question {
+  font-size: 20px;
+}
+
 .inline {
   width: 10%;
   margin: 5 0.5em 0 0;
   vertical-align: middle;
 }
+
+label.bio {
+  margin-top: 25px;
+}
+
+input[type='checkbox'], input[type="radio"] {
+  margin: 0px;
+}
+
 
 input[type="submit"] {
   display: block;
@@ -62,7 +84,7 @@ input[type="submit"] {
   background-color: #e6f5ea;
   border-color: #083620;
   min-width: 300px;
-  border-radius: 0.6rem;
+  border-radius: 0.5rem;
   color: #004D47;
   box-shadow: 10px 5px 5px #083620;
 }
